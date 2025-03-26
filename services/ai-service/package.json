@@ -1,0 +1,28 @@
+{
+  "name": "ai-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "train": "ts-node src/train.ts",
+    "start": "ts-node src/index.ts",
+    "test": "ts-node src/test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/cors": "^2.8.17",
+    "axios": "^1.8.4",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ml-random-forest": "^2.1.0"
+  }
+}

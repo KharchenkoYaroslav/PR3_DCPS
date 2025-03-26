@@ -1,0 +1,20 @@
+{
+  "name": "health-service",
+  "version": "1.0.0",
+  "description": "Сервіс для тестування доступності інших сервісів",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@types/axios": "^0.9.36",
+    "express": "^4.21.2",
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

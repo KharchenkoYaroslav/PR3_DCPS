@@ -1,0 +1,35 @@
+services:
+  data-service:
+    build: ./services/data-service
+    container_name: data-service
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - "4001:4001"
+
+  ai-service:
+    build: ./services/ai-service
+    container_name: ai-service
+    restart: always
+    depends_on:
+      - data-service
+    env_file:
+      - ./.env
+    ports:
+      - "4002:4002"
+    volumes:
+      - ./services/ai-service/random_forest_model.json:/usr/src/app/random_forest_model.json
+    
+  health-service:
+    build: ./services/health-service
+    container_name: health-service
+    restart: always
+    depends_on:
+      - data-service
+      - ai-service  
+    environment:
+      - PORT=4003
+    ports:
+    - "4003:4003"
+

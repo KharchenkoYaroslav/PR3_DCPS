@@ -1,0 +1,25 @@
+{
+  "name": "data-service",
+  "version": "1.0.0",
+  "description": "Сервіс для зберігання погодних даних у MongoDB",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "migrate": "ts-node src/migrate.ts"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.11.96",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.2",
+    "mongodb": "^5.0.1",
+    "mongoose": "^8.12.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
