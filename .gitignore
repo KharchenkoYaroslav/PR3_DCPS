@@ -1,3 +1,4 @@
 **/node_modules/
 .env
-services/ai-service/random_forest_model.json
+**/random_forest_model.json
+
