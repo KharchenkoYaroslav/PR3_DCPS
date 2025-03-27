@@ -31,8 +31,8 @@ async function trainModel() {
   const y = data.map(({ temperature }) => temperature);
 
   const options = {
-    nEstimators: 400, 
-    maxFeatures: 4, 
+    nEstimators: 200, 
+    maxFeatures: 2, 
     minSamplesSplit: 2, 
   };
 
